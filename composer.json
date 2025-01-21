@@ -2,7 +2,7 @@
     "name": "ahur-system/wprestgraphql",
     "description": "A REST API that retrieves WP Data through GraphQL.",
     "autoload": {
-        "psr-0": {
+        "psr-4": {
             "AhurSystem\\Wordpress\\RESTGraphQL": "."
         }
     },
