@@ -1,0 +1,17 @@
+
+query PostByUri($uri: String!) {
+	menuItems(where: {location: PRIMARY_TOP_MENU}) {
+		nodes {
+			key: id 
+			parentId
+			title: label
+			uri 
+		}
+	}
+	generalSettings {
+		...GeneralSettings
+	}
+	nodeByUri(uri: $uri) {
+		...Post
+	}
+}

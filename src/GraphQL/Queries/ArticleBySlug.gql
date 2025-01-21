@@ -1,5 +1,3 @@
-#import "~/extend/fragments/Post.fragment.gql"
- 
 query ArticleBySlug ($slug: ID = "ثبتنام-اربعین-1402-در-سامانه-سماح-فردا-آغ") {
   post(idType: SLUG, id: $slug) {
     ...Post
