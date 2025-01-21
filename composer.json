@@ -2,7 +2,6 @@
     "name": "ahur-system/wprestgraphql",
     "description": "A REST API that retrieves WP Data through GraphQL.",
     "require": {
-        "php": ">=7.4",
-        "another-vendor/package": "1.*"
+        "php": ">=7.4"
     }
 }
