@@ -3,7 +3,7 @@
     "description": "A REST API that retrieves WP Data through GraphQL.",
     "autoload": {
         "psr-4": {
-            "AhurSystem\\Wordpress\\RESTGraphQL": "src/"
+            "AhurSystem\\Wordpress\\RESTGraphQL\\": "src/"
         }
     },
     "require": {
