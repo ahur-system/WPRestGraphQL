@@ -1,0 +1,24 @@
+query Categories($limit: Int = 10) {
+  categories(first: $limit) {
+    nodes {
+      ...Category
+    }
+  }
+} 
+fragment Category on Category {
+	name
+	children {
+		edges {
+			node {
+				name
+				children {
+					edges {
+						node {
+							name
+						}
+					}
+				}
+			}
+		}
+	}
+}

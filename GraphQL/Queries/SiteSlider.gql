@@ -1,0 +1,8 @@
+#import "~/.queries/fragments/Post.fragment.gql"
+query SiteSlider {
+  posts(first: 15, where: {tagSlugAnd: "prominent"}) {
+    nodes {
+      ...Post
+    }
+  }
+}
